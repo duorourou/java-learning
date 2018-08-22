@@ -47,4 +47,17 @@ public class PrimitiveTypesTest {
         assertEquals(31.02F, 3__1.0_2F);
         assertEquals(333333333333L, 333_333_333_333L);
     }
+
+    @Test
+    public void stringTestCases() {
+
+        // 1. should have same value when 2 string compare
+        assertEquals("string1st", "string1st");
+        // 2. should same
+        assertSame("string1st", "string1st");
+
+        // 3. "string2nd" should equals with new String("string2nd") but not same
+        assertEquals("string2nd", new String("string2nd"));
+        assertNotSame("string2nd", new String("string2nd"));
+    }
 }
