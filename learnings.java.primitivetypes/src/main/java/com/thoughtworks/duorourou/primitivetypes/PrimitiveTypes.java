@@ -1,6 +1,6 @@
-package com.thoughtworks.duorourou.basictypes;
+package com.thoughtworks.duorourou.primitivetypes;
 
-public class BasicTypes {
+public class PrimitiveTypes {
     public byte byteVariable;
     public short shortVariable;
     public int intVariable;

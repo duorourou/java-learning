@@ -1,24 +1,24 @@
-package com.thoughtworks.duorourou.basictypes;
+package com.thoughtworks.duorourou.primitivetypes;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BasicTypesTest {
+class PrimitiveTypesTest {
 
     @Test
     public void shouldHasDefaultValue() {
-        BasicTypes basicTypes = new BasicTypes();
-        assertEquals(0, basicTypes.byteVariable);
-        assertEquals(0, basicTypes.shortVariable);
-        assertEquals(0, basicTypes.intVariable);
-        assertEquals(0L, basicTypes.longVariable);
-        assertEquals(0F, basicTypes.floatVariable);
-        assertEquals(0D, basicTypes.doubleVariable);
-        assertEquals(0, basicTypes.charVariable);
+        PrimitiveTypes primitiveTypes = new PrimitiveTypes();
+        assertEquals(0, primitiveTypes.byteVariable);
+        assertEquals(0, primitiveTypes.shortVariable);
+        assertEquals(0, primitiveTypes.intVariable);
+        assertEquals(0L, primitiveTypes.longVariable);
+        assertEquals(0F, primitiveTypes.floatVariable);
+        assertEquals(0D, primitiveTypes.doubleVariable);
+        assertEquals(0, primitiveTypes.charVariable);
 
-        assertFalse(basicTypes.booleanVariable); // equal with assertEquals(false, basicTypes.booleanVariable)
-        assertNull(basicTypes.stringVariable); // equal with assertEquals(null, basicTypes.stringVariable);
+        assertFalse(primitiveTypes.booleanVariable); // equal with assertEquals(false, PrimitiveTypes.booleanVariable)
+        assertNull(primitiveTypes.stringVariable); // equal with assertEquals(null, PrimitiveTypes.stringVariable);
     }
 
     @Test
