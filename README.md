@@ -1,7 +1,7 @@
 This repository want to list some samples for java language
 
 #Variables
-###Basic Data Type
+###Primitive Data Type
 You will find more details about the data types in java [here](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html).
 
 |Data Type|Default Value|

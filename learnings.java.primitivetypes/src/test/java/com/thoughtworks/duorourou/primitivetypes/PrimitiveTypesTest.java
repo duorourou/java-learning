@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PrimitiveTypesTest {
+public class PrimitiveTypesTest {
 
     @Test
     public void shouldHasDefaultValue() {
@@ -34,5 +34,15 @@ class PrimitiveTypesTest {
         // Similar with -128 - 1, the maximum value of byte type is 01111111 in binary. 01111111 + 00000001 = 10000000 that is -128.
 
 //        byte: 8-bit signed . minimum value of -128 and maximum value of 127 (inclusive).
+
+        // Use underscore to separate a number
+        assertEquals(31, 3_1);
+        assertEquals(31, 3__1);
+        assertEquals(31L, 3__1L);
+        assertEquals(31F, 3__1F);
+        assertEquals(31.02F, 3__1.02F);
+        assertEquals(31.02F, 3__1.0_2F);
+        assertEquals(333333333333L, 333_333_333_333L);
+
     }
 }
