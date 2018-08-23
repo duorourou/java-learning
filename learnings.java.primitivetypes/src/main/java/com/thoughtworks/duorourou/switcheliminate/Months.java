@@ -1,4 +1,4 @@
-package com.thoughtworks.duorourou.swith;
+package com.thoughtworks.duorourou.switcheliminate;
 
 public class Months {
 

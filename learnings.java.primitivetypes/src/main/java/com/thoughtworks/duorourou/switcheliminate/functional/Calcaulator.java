@@ -1,4 +1,4 @@
-package com.thoughtworks.duorourou.swith.functional;
+package com.thoughtworks.duorourou.switcheliminate.functional;
 
 import java.util.Map;
 

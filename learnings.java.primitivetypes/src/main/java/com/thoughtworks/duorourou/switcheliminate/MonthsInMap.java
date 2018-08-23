@@ -1,4 +1,4 @@
-package com.thoughtworks.duorourou.swith;
+package com.thoughtworks.duorourou.switcheliminate;
 
 import java.util.Map;
 
