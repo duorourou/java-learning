@@ -59,5 +59,10 @@ public class PrimitiveTypesTest {
         // 3. "string2nd" should equals with new String("string2nd") but not same
         assertEquals("string2nd", new String("string2nd"));
         assertNotSame("string2nd", new String("string2nd"));
+
+        // 4 new String("string3rd") should equal with new String("string3rd") but not same
+        assertEquals(new String("string3rd"), new String("string3rd"));
+        assertNotSame(new String("string3rd"), new String("string3rd"));
+
     }
 }
