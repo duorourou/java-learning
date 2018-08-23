@@ -64,5 +64,10 @@ public class PrimitiveTypesTest {
         assertEquals(new String("string3rd"), new String("string3rd"));
         assertNotSame(new String("string3rd"), new String("string3rd"));
 
+        // 5 String pool
+        assertSame("string4th", "string" + "4th");
+
+        // 6 String object + "" will use StringBuffer to calculate the result
+        assertNotSame("string5th", "string" + new String("5th"));
     }
 }
