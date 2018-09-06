@@ -2,3 +2,7 @@
 *.iml
 *.iws
 *.ipr
+.gradle
+out
+output
+*.log

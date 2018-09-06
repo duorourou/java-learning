@@ -1,0 +1,1 @@
+The appearance of text on your page depends on a complex interaction of processes called composition. Using the word spacing, letterspacing, glyph scaling, and hyphenation options you’ve selected, InCopy composes your type in a way that best supports the specified parameters.
