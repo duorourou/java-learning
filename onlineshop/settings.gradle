@@ -1,0 +1,8 @@
+rootProject.name = 'onlineshop'
+
+include(
+        'zipkin',
+        'inventory',
+        'commodity',
+        'item'
+)

@@ -1,0 +1,6 @@
+server:
+  port: 10903
+spring:
+  data:
+    mongodb:
+      database: commodity

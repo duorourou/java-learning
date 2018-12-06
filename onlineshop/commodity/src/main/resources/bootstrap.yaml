@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: commodity
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        service-name: commodity
+        instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}

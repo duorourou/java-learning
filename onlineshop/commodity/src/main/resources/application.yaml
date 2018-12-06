@@ -1,0 +1,14 @@
+server:
+  port: 10902
+spring:
+  data:
+    mongodb:
+      database: commodity
+  sleuth:
+    sampler:
+      probability: 1.0
+    web:
+      skip-pattern: (^cleanup.*)
+feign:
+  hystrix:
+    enabled: true

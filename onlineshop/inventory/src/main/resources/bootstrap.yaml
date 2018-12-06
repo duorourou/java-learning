@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: inventory
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        service-name: inventory
+        instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
