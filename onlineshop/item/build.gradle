@@ -12,6 +12,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'groovy'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -35,6 +36,10 @@ dependencies {
     implementation('org.springframework.cloud:spring-cloud-starter-sleuth')
     implementation('org.springframework.cloud:spring-cloud-starter-zipkin')
     compileOnly('org.projectlombok:lombok')
+    compile "org.codehaus.groovy:groovy-all:2.4.15"
+    compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+    testCompile "org.spockframework:spock-core:1.2-groovy-2.4"
+    testCompile "org.spockframework:spock-spring:1.2-groovy-2.4"
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation('io.projectreactor:reactor-test')
 }

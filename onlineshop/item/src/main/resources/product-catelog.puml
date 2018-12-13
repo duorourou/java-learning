@@ -1,0 +1,86 @@
+@startuml
+class Contact {
+    String name
+    String address
+    String phoneNumber
+}
+
+class Vendor {
+    String name
+    String code
+    Contact contact
+}
+
+enum PurchaseType {
+    自销
+    代销
+}
+
+class BPart {
+    String name
+    String code
+    Vendor vendor
+    PurchaseType purchaseType
+    String offeringNumber
+}
+
+Vendor .-> Contact
+BPart .-> Vendor
+BPart <-. PurchaseType
+
+
+class SPart {
+    String name
+    String name
+    String code
+    String offeringNumber
+    Vendor vendor
+    TransportationData transportationData
+    InvoiceData invoiceData
+}
+
+class TransportationData {
+    boolean hasBattery
+}
+
+class InvoiceData {
+    boolean xx
+    String xx
+}
+
+SPart "1" o-- "many" BPart
+
+SPart o-- TransportationData
+SPart o-- InvoiceData
+SPart o-- XXX
+SPart o-- XXXX
+SPart o-- XXXXX
+
+
+SPartCreateRequest <.. SPartCreateCmd
+
+SPartCreateCmd <.. SPart
+
+SPartCreatedEvent <.. SPart
+
+SPartCreatedResponse <.. SPartCreatedEvent
+
+BPartCreateCmd <-. BPart
+
+BPartCreatedEvent <-. BPart
+
+BPartCreateRequest <-. BPartCreateCmd
+
+BPartCreatedResponse <-. BPartCreatedEvent
+
+interface SParts <<Resource>> {
+}
+
+SParts .-> SPart
+
+SParts <|-- SPartRepository
+
+SPartPO <.- SPartRepository
+
+
+@enduml
